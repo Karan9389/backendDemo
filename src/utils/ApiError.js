@@ -1,4 +1,4 @@
-//we create this file just to standardising the resopne of error and respoense
+//we create this file just to standardising the resopnse of error and respoense
 class ApiError extends Error{
     constructor(
         statusCode,

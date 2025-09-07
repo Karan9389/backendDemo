@@ -1,7 +1,7 @@
 //what asyncHandler work ?
 //nothing but it make a function and just export it .
 
-//dfigning this function using Promises
+//defigning this function using Promises
 const asyncHandler = (requestHandler) => {      //requestHandler == fn
     return (req, res, next) => {
      Promise.resolve(requestHandler(req, res, next)).catch((err) = next(err))
